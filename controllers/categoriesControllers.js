@@ -15,9 +15,9 @@ export const getCategories = (req, res) => {
 // 2. menyimpan data katagori
 // sql ? insert into categories (id, name) values (?, ?)
 export const insertCategory = (req, res) => {
-    const { name, description } = req.body;
+    const { id, name} = req.body;
     db.query("insert into categories (id, name) values (?, ?)",
-        [name, description],
+        [id, name],
         (err, results) => {
         //jika ada eror
         if (err) res.status(500).json({ message: "Gagal menyimpan data kategori", error: err });
