@@ -17,34 +17,34 @@ Repository ini berisi source code untuk **Tugas Praktikum Node.js & Express.js**
 
 ## 🚀 Cara Menjalankan Project
 - # Categories
-- GET /categories - List all categories
-- POST /categories - Create category
+- GET http://localhost:3000/categories - List all categories
+- POST http://localhost:3000/categories - Create category
   - (Body > RAW > JSON : {
     "id": "PM",
     "name": "PERALATAN MASAK"
 }) 
-- GET /categories/:id - Detail category
-- PUT /categories/:id - Update category
+- GET http://localhost:3000/categories/id - Detail category
+- PUT http://localhost:3000/categories/id - Update category
   - (Body > RAW > JSON : {
     "id": "PM",
     "name": "PERALATAN MANDI"
 }) 
-- DELETE /categories/:id - Delete category
+- DELETE http://localhost:3000/categories/id - Delete category
 
 - # Products
-- GET /products - List all products
-- POST /products - Create product
+- GET http://localhost:3000/products - List all products
+- POST http://localhost:3000/products - Create product
   -  (Body > RAW > JSON : {
     "category_id": "MK",
     "name": "AYAM OPOR",
     "price": "20000.00"
 })
-- GET /products/:id - Detail product
-- PUT /products/:id - Update product
+- GET http://localhost:3000/products/id - Detail product
+- PUT http://localhost:3000/products/id - Update product
   - (Body > RAW > JSON : {
     "id": 4,
     "category_id": "MK",
     "name": "AYAM OPOR TEGAL",
     "price": "25000.00"
 })
-- DELETE /products/:id - Delete product
+- DELETE http://localhost:3000/products/id - Delete product
