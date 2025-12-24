@@ -16,16 +16,35 @@ Repository ini berisi source code untuk **Tugas Praktikum Node.js & Express.js**
 - [Nodemon](https://nodemon.io/) - Development utility
 
 ## 🚀 Cara Menjalankan Project
-- Categories
+- # Categories
 - GET /categories - List all categories
-- POST /categories - Create category (Body: {"name": "Electronics"})
+- POST /categories - Create category
+  - (Body > RAW > JSON : {
+    "id": "PM",
+    "name": "PERALATAN MASAK"
+}) 
 - GET /categories/:id - Detail category
 - PUT /categories/:id - Update category
+  - (Body > RAW > JSON : {
+    "id": "PM",
+    "name": "PERALATAN MANDI"
+}) 
 - DELETE /categories/:id - Delete category
 
-- Products
+- # Products
 - GET /products - List all products
-- POST /products - Create product (Body: {"category_id": 1, "name": "Laptop", "price": 5000000})
+- POST /products - Create product
+  -  (Body > RAW > JSON : {
+    "category_id": "MK",
+    "name": "AYAM OPOR",
+    "price": "20000.00"
+})
 - GET /products/:id - Detail product
 - PUT /products/:id - Update product
+  - (Body > RAW > JSON : {
+    "id": 4,
+    "category_id": "MK",
+    "name": "AYAM OPOR TEGAL",
+    "price": "25000.00"
+})
 - DELETE /products/:id - Delete product
